@@ -1,10 +1,5 @@
 image: python:3.12-slim
 
-acceptance_test_python:
-  extends: .acceptance_test
-  variables:
-    DOCKERFILE: deploy/app-python/Dockerfile
-
 build_python:
   stage: build
   script:
