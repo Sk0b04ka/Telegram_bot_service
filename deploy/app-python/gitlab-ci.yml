@@ -11,7 +11,7 @@ build_python:
 lint_python:
   stage: validate
   script:
-    - echo "Lint stage"
+   - echo "Lint stage"
    - black .
    - ruff check .
    - pytest --dead-fixtures --dup-fixtures
