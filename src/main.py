@@ -1,10 +1,8 @@
-import argparse
 import logging
 
 logging.basicConfig()
 logging.getLogger().setLevel(logging.INFO)
 logger = logging.getLogger(__name__)
-
 
 
 if __name__ == "__main__":
