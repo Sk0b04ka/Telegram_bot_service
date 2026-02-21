@@ -6,7 +6,7 @@ from telegram.ext import (
     filters,
 )
 
-from bot.dispatcher import CommandDispatcher
+from dispatcher import CommandDispatcher
 
 
 class TelegramBotApp:
