@@ -1,6 +1,6 @@
 import logging
 from .base import CommandHandler
-from bot.repository.user_repository import UserRepository
+from repository.user_repository import UserRepository
 
 logger = logging.getLogger(__name__)
 
