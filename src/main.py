@@ -1,9 +1,9 @@
-import logging
+from bot.app import create_app
 
-logging.basicConfig()
-logging.getLogger().setLevel(logging.INFO)
-logger = logging.getLogger(__name__)
 
+def main() -> None:
+    app = create_app()
+    app.run_polling()
 
 if __name__ == "__main__":
-    logger.info("Hello world!")
+    main()
