@@ -1,14 +1,14 @@
-import os
-from dataclasses import dataclass
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-@dataclass(frozen=True)
-class Settings:
+class Settings(BaseSettings):
     telegram_token: str
 
-    @staticmethod
-    def load() -> "Settings":
-        token = os.getenv("TELEGRAM_TOKEN")
-        if not token:
-            raise RuntimeError("TELEGRAM_TOKEN is not set")
-        return Settings(telegram_token=token)
+    model_config = SettingsConfigDict(
+        env_file=".env.example",
+        env_file_encoding="utf-8",
+    )
+
+
+def get_settings() -> Settings:
+    return Settings()

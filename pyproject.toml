@@ -2,7 +2,7 @@
 name = "backend-academy-2026-python-template"
 version = "0.1.0"
 description = "Telegram bot for LinkTracker project"
-authors = ["g.tarasov <g.tarasov@tbank.ru>"]
+authors = ["i.pankov <IvAlPankov@yandex.ru>"]
 readme = "README.md"
 package-mode = true
 
@@ -15,6 +15,8 @@ packages = [
 python = "^3.12"
 python-telegram-bot = "^20.7"
 structlog = "^25.5.0"
+pydantic = "^2.12.5"
+pydantic-settings = "^2.13.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.8.0"

@@ -1,4 +1,4 @@
-from src.config import Settings
+from src.config import get_settings
 from src.logging_config import setup_logging
 from src.repository.user_repository import UserRepository
 from src.handlers.start import StartHandler
@@ -9,7 +9,7 @@ from src.telegram_client import TelegramBotApp
 
 def create_app() -> TelegramBotApp:
     setup_logging()
-    settings = Settings.load()
+    settings = get_settings()
 
     user_repository = UserRepository()
 
