@@ -1,9 +1,9 @@
 import pytest
 
-from dispatcher import CommandDispatcher
-from handlers.start import StartHandler
-from handlers.help import HelpHandler
-from repository.user_repository import UserRepository
+from src.dispatcher import CommandDispatcher
+from src.handlers.start import StartHandler
+from src.handlers.help import HelpHandler
+from src.repository.user_repository import UserRepository
 
 
 @pytest.mark.asyncio
