@@ -1,10 +1,10 @@
-from config import Settings
-from logging_config import setup_logging
-from repository.user_repository import UserRepository
-from handlers.start import StartHandler
-from handlers.help import HelpHandler
-from dispatcher import CommandDispatcher
-from telegram_client import TelegramBotApp
+from src.config import Settings
+from src.logging_config import setup_logging
+from src.repository.user_repository import UserRepository
+from src.handlers.start import StartHandler
+from src.handlers.help import HelpHandler
+from src.dispatcher import CommandDispatcher
+from src.telegram_client import TelegramBotApp
 
 
 def create_app() -> TelegramBotApp:

@@ -2,9 +2,13 @@
 name = "backend-academy-2026-python-template"
 version = "0.1.0"
 description = "Telegram bot for LinkTracker project"
-package-mode = false
 authors = ["g.tarasov <g.tarasov@tbank.ru>"]
 readme = "README.md"
+package-mode = true
+
+packages = [
+    { include = "src" }
+]
 
 
 [tool.poetry.dependencies]
@@ -23,3 +27,6 @@ pytest-asyncio = "^0.23"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bot = "src.main:main"

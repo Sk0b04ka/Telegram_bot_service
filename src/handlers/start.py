@@ -1,6 +1,6 @@
 import structlog
-from .base import CommandHandler
-from repository.user_repository import UserRepository
+from src.handlers.base import CommandHandler
+from src.repository.user_repository import UserRepository
 
 logger = structlog.get_logger(__name__)
 

@@ -1,5 +1,5 @@
 import structlog
-from .base import CommandHandler
+from src.handlers.base import CommandHandler
 
 logger = structlog.get_logger(__name__)
 

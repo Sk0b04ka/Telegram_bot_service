@@ -1,6 +1,6 @@
 from typing import Iterable
-from handlers.base import CommandHandler
-from handlers.unknown import UnknownHandler
+from src.handlers.base import CommandHandler
+from src.handlers.unknown import UnknownHandler
 
 
 class CommandDispatcher:

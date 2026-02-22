@@ -6,7 +6,7 @@ from telegram.ext import (
     filters,
 )
 
-from dispatcher import CommandDispatcher
+from src.dispatcher import CommandDispatcher
 
 
 class TelegramBotApp:
@@ -48,7 +48,7 @@ class TelegramBotApp:
         await self._application.bot.set_my_commands(
             [
                 BotCommand("start", "Начать работу"),
-                BotCommand("help", "Список команд"),
+                BotCommand("help", "Список команд")
             ]
         )
 

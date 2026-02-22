@@ -1,3 +1,5 @@
 .DS_Store
 .env.mainToken
 __pycache__/
+start.txt
+.pytest_cache/
