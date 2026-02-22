@@ -485,6 +485,18 @@ files = [
 ]
 
 [[package]]
+name = "structlog"
+version = "25.5.0"
+description = "Structured Logging for Python"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "structlog-25.5.0-py3-none-any.whl", hash = "sha256:a8453e9b9e636ec59bd9e79bbd4a72f025981b3ba0f5837aebf48f02f37a7f9f"},
+    {file = "structlog-25.5.0.tar.gz", hash = "sha256:098522a3bebed9153d4570c6d0288abf80a031dfdb2048d59a49e9dc2190fc98"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.15.0"
 description = "Backported and Experimental Type Hints for Python 3.9+"
@@ -500,4 +512,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "c5567abfbc125e460574933daa2ac1c17b44a514ecf9f7bfad549c9d3ef527b5"
+content-hash = "1c80e3872f551a5ab14dfa0d72fafb95abb928c1c90386b2b7076015ca06aec0"

@@ -1,7 +1,7 @@
-import logging
+import structlog
 from .base import CommandHandler
 
-logger = logging.getLogger(__name__)
+logger = structlog.get_logger(__name__)
 
 
 class HelpHandler(CommandHandler):
@@ -11,7 +11,8 @@ class HelpHandler(CommandHandler):
     async def handle(self, user_id: int, username: str | None) -> str:
         logger.info(
             "help_command_received",
-            extra={"user_id": user_id, "username": username},
+            user_id=user_id,
+            username=username,
         )
 
         return (
